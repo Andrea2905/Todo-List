@@ -1,52 +1,13 @@
-
-<section class="todoapp">
-    <header class="header">
-        <h1>Tareas</h1>
-        <input id="new-todo-input" class="new-todo" placeholder="¿Qué necesita ser hecho?" aut>
-    </header>
-
-    <section class="main">
-        <input id="toggle-all" class="toggle-all" type="checkbox">
-        <label for="toggle-all">Mark all as complete</label>
-        <ul class="todo-list">
-            <li class="completed" data-id="abc">
-                <div class="view">
-                    <input class="toggle" type="checkbox" checked>
-                    <label>Probar JavaScript</label>
-                    <button class="destroy"></button>
-                </div>
-                <input class="edit" value="Create a TodoMVC template">
-            </li>
-            <li> 
-                <div class="view">
-                    <input class="toggle" type="checkbox">
-                    <label>Comprar un unicornio</label>
-                    <button class="destroy"></button>
-                </div>
-                <input class="edit" value="Rule the web">
-            </li>
-        </ul>
-    </section>
-    
-    <footer class="footer">
-        <span class="todo-count"><strong><span id="pending-count">0</span></strong> pendiente(s)</span>
-        <ul class="filters">
-            <li>
-                <a class="selected filtro" href="#/">Todos</a>
-            </li>
-            <li>
-                <a class="filtro" href="#/active">Pendientes</a>
-            </li>
-            <li>
-                <a class="filtro" href="#/completed">Completados</a>
-            </li>
-        </ul>
-        <button class="clear-completed">Borrar completados</button>
-    </footer>
-</section>
-
-<footer class="info">
-    <p>Template creado por <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
-    <p>Creado por <a href="http://todomvc.com">ti</a></p>
-    <p>Parte de <a href="http://todomvc.com">TodoMVC</a></p>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js" defer></script>
+</body>
+</html>
