@@ -1,12 +1,17 @@
 
 import html from './app.html?raw';
+import todoStore from '../store/todo.store.js';
+
 /**
- *
- * @param {String} elementId
+ * @param {string} elementId
  */
 export const App = (elementId) => {
 
-    //cuando se llame la funcion app() se llama esta funcion anonima autoejecutable
+    const displayTodos = () => {
+        const todos = todoStore.getTodos(todoStore.getCurrentFilter());
+    }
+
+    // Cuando se llame la función app() se llama esta función anónima autoejecutable
     (() => {
         const app = document.createElement('div');
         app.innerHTML = html;
