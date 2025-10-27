@@ -8,4 +8,6 @@ import { Todo } from '../../models/todo.model.js';
  */
 export const renderTodos = (elementId, todos = []) => {
 
+    console.log("Test de Renderizado" + elementId, todos );
+
 };
